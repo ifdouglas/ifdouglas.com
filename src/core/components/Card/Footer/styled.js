@@ -12,6 +12,10 @@ const Link = styled.a`
 
   ${({ href }) => href && css`
     cursor: pointer;
+
+    :hover {
+      transform: scale(1.1)
+    }
   `}
 `
 

@@ -28,10 +28,18 @@ const Navbar = () => {
         </Router>
       </Styled.Body>
       <Styled.Footer>
-        <InstagramSVG />
-        <GitHubSVG />
-        <LinkedInSVG />
-        <YouTubeSVG />
+        <Styled.Link href="https://instagram.com/ifdouglas">
+          <InstagramSVG />
+        </Styled.Link>
+        <Styled.Link href="https://github.com/ifdouglas">
+          <GitHubSVG />
+        </Styled.Link>
+        <Styled.Link href="https://linkedin.com/in/ifdouglas">
+          <LinkedInSVG />
+        </Styled.Link>
+        <Styled.Link href="https://www.youtube.com/channel/UCULnRixNG6dyQb9lo2xLrpg">
+          <YouTubeSVG />
+        </Styled.Link>
       </Styled.Footer>
       <Styled.Legend>
         © COPYRIGHT 2020

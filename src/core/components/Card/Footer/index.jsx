@@ -7,7 +7,7 @@ const CardFooter = ({ linkApple, linkGoogle }) => {
 
   return (
     <Styled.Footer>
-    <Styled.Link href={linkApple} target="_blank">
+      <Styled.Link href={linkApple} target="_blank">
         <AppleStoreSVG />
       </Styled.Link>
       <Styled.Link href={linkGoogle} target="_blank">

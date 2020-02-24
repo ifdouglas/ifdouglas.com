@@ -1,5 +1,4 @@
-import styled from 'styled-components'
-
+import styled, { css } from 'styled-components'
 
 const Body = styled.main`
   display: flex;
@@ -20,7 +19,7 @@ const Footer = styled.footer`
   justify-content: center;
 
   * {
-    margin: 15px;
+    margin: 5px;
   }
 `
 
@@ -60,8 +59,22 @@ const Wrapper = styled.section`
   width: 358px;
 `
 
+const Link = styled.a`
+  text-decoration: none;
+  cursor: default;
+
+  :hover {
+    transform: scale(1.1)
+  }
+
+  ${({ href }) => href && css`
+    cursor: pointer;
+  `}
+`
+
 export default {
   Body,
+  Link,
   Footer,
   Header,
   Legend,
