@@ -7,10 +7,11 @@ const Footer = styled.div`
 `
 
 const Link = styled.a`
-  text-decoration: none,
+  text-decoration: none;
+  cursor: default;
 
-  ${({ href }) => !href && css`
-    cursor: help;
+  ${({ href }) => href && css`
+    cursor: pointer;
   `}
 `
 
