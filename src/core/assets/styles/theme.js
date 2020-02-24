@@ -1,4 +1,3 @@
-
 export const COLOR_BLUE_ZODIAC = '#424757'
 export const COLOR_LICORICE = '#333744'
 export const COLOR_BLACK = '#111111'
