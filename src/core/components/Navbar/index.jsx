@@ -28,16 +28,16 @@ const Navbar = () => {
         </Router>
       </Styled.Body>
       <Styled.Footer>
-        <Styled.Link href="https://instagram.com/ifdouglas">
+        <Styled.Link href="https://www.instagram.com/ifdouglas" target="_blank">
           <InstagramSVG />
         </Styled.Link>
-        <Styled.Link href="https://github.com/ifdouglas">
+        <Styled.Link href="https://www.github.com/ifdouglas" target="_blank">
           <GitHubSVG />
         </Styled.Link>
-        <Styled.Link href="https://linkedin.com/in/ifdouglas">
+        <Styled.Link href="https://www.linkedin.com/in/ifdouglas" target="_blank">
           <LinkedInSVG />
         </Styled.Link>
-        <Styled.Link href="https://www.youtube.com/channel/UCULnRixNG6dyQb9lo2xLrpg">
+        <Styled.Link href="https://www.youtube.com/channel/UCULnRixNG6dyQb9lo2xLrpg" target="_blank">
           <YouTubeSVG />
         </Styled.Link>
       </Styled.Footer>

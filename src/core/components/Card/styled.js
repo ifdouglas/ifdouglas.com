@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Card = styled.div`
   width: 400px;
-  height: 800px;
+  height: 750px;
   padding: 20px;
   background: ${({ theme }) => theme.card.background};
   color: ${({ theme }) => theme.card.color};
