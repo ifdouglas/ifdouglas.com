@@ -47,6 +47,11 @@ export const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  // override for react-slick lib
+  .slick-dots > li > button:before {
+    color: #fff !important;
+  }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   }

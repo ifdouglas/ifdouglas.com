@@ -1,15 +1,7 @@
-import React from 'react'
-import Styled from './styled'
+import Default from './Default'
+import Outlined from './Outlined'
 
-const Button = ({ active, children }) => {
-
-  return (
-    <Styled.Button
-      active={active}
-    >
-      { children }
-    </Styled.Button>
-  )
+export default {
+  Default,
+  Outlined,
 }
-
-export default Button

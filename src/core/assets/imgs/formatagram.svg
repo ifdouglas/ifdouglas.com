@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="84px" viewBox="0 0 83 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-16.0%" y="-16.0%" width="132.0%" height="132.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#6A41FB" offset="0%"></stop>
+            <stop stop-color="#4512FA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Personal-Site---Products" transform="translate(-472.000000, -141.000000)">
+            <g id="App-Card" transform="translate(452.000000, 122.000000)">
+                <g id="Group" filter="url(#filter-1)" transform="translate(24.000000, 21.500000)">
+                    <path d="M16.0242825,2.59433947e-16 L58.9757175,6.47400192e-16 C64.5477096,-3.76158156e-16 66.5682486,0.58016007 68.6052856,1.6695794 C70.6423227,2.75899873 72.2410013,4.35767732 73.3304206,6.39471435 C74.4198399,8.43175139 75,10.4522904 75,16.0242825 L75,58.9757175 C75,64.5477096 74.4198399,66.5682486 73.3304206,68.6052856 C72.2410013,70.6423227 70.6423227,72.2410013 68.6052856,73.3304206 C66.5682486,74.4198399 64.5477096,75 58.9757175,75 L16.0242825,75 C10.4522904,75 8.43175139,74.4198399 6.39471435,73.3304206 C4.35767732,72.2410013 2.75899873,70.6423227 1.6695794,68.6052856 C0.58016007,66.5682486 -2.76124646e-16,64.5477096 4.75234011e-16,58.9757175 L4.31600128e-16,16.0242825 C-2.50772104e-16,10.4522904 0.58016007,8.43175139 1.6695794,6.39471435 C2.75899873,4.35767732 4.35767732,2.75899873 6.39471435,1.6695794 C8.43175139,0.58016007 10.4522904,-1.50738594e-16 16.0242825,2.59433947e-16 Z" id="Rectangle" fill="url(#linearGradient-2)"></path>
+                    <rect id="Rectangle" fill="#FFFFFF" x="10.7666016" y="11.4257812" width="53.4667969" height="5.63964844" rx="2.81982422"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="21.1669922" y="30.0292969" width="43.0664062" height="5.63964844" rx="2.81982422"></rect>
+                    <rect id="Rectangle-Copy-4" fill="#FFFFFF" x="10.7666016" y="30.0292969" width="6.00585938" height="5.63964844" rx="2.81982422"></rect>
+                    <rect id="Rectangle-Copy-6" fill="#FFFFFF" x="10.7666016" y="39.3310547" width="6.00585938" height="5.63964844" rx="2.81982422"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#FFFFFF" x="21.1669922" y="39.3310547" width="43.0664062" height="5.63964844" rx="2.81982422"></rect>
+                    <rect id="Rectangle-Copy-5" fill="#FFFFFF" x="10.7666016" y="57.9345703" width="53.4667969" height="5.63964844" rx="2.81982422"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

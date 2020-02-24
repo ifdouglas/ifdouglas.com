@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-const Wrapper = styled.article``
+const Button = styled.button``
 
 export default {
-  Wrapper,
+  Button,
 }

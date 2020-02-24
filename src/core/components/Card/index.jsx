@@ -1,12 +1,14 @@
 import React from 'react'
 import Styled from './styled'
 
-const Card = () => {
+const Card = ({ header, body, footer }) => {
 
   return (
-    <Styled.Wrapper>
-
-    </Styled.Wrapper>
+    <Styled.Card>
+      { header }
+      { body }
+      { footer }
+    </Styled.Card>
   )
 }
 

@@ -1,6 +1,7 @@
 
 export const COLOR_BLUE_ZODIAC = '#424757'
 export const COLOR_LICORICE = '#333744'
+export const COLOR_BLACK = '#111111'
 export const COLOR_WHITE = '#FFFFFF'
 
 export const lightTheme = {
@@ -8,6 +9,20 @@ export const lightTheme = {
   navbar: {
     background: COLOR_LICORICE,
     color: COLOR_WHITE,
+  },
+  link: {
+    background: COLOR_WHITE,
+    color: COLOR_BLUE_ZODIAC,
+    shadow: COLOR_LICORICE,
+    active: {
+      background: COLOR_BLUE_ZODIAC,
+      color: COLOR_WHITE,
+      shadow: COLOR_BLACK,
+    },
+    hover: {
+      background: COLOR_WHITE,
+      color: COLOR_BLUE_ZODIAC,
+    },
   },
   button: {
     background: COLOR_BLUE_ZODIAC,
@@ -21,6 +36,11 @@ export const lightTheme = {
       color: COLOR_WHITE,
     },
   },
+  card: {
+    background: COLOR_WHITE,
+    color: COLOR_LICORICE,
+    shadow: COLOR_LICORICE,
+  },
   text: COLOR_BLUE_ZODIAC,
   toggleBorder: COLOR_WHITE,
   gradient: 'linear-gradient(#39598A, #79D7ED)',
@@ -31,6 +51,20 @@ export const darkTheme = {
   navbar: {
     background: COLOR_LICORICE,
     color: COLOR_WHITE,
+  },
+  link: {
+    background: COLOR_WHITE,
+    color: COLOR_BLUE_ZODIAC,
+    shadow: COLOR_LICORICE,
+    active: {
+      background: COLOR_BLUE_ZODIAC,
+      color: COLOR_WHITE,
+      shadow: COLOR_BLACK,
+    },
+    hover: {
+      background: COLOR_WHITE,
+      color: COLOR_BLUE_ZODIAC,
+    },
   },
   button: {
     background: COLOR_WHITE,
@@ -43,6 +77,11 @@ export const darkTheme = {
       background: COLOR_WHITE,
       color: COLOR_BLUE_ZODIAC,
     },
+  },
+  card: {
+    background: COLOR_LICORICE,
+    color: COLOR_WHITE,
+    shadow: COLOR_LICORICE,
   },
   text: COLOR_WHITE,
   toggleBorder: COLOR_LICORICE,
