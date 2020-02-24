@@ -8,33 +8,47 @@ import Styled from './styled'
 
 const Product = () => {
 
-  const renderHeader = (
+  const products = [
+    {
+      title: "Formatagram",
+      slogan: "Formate legendas com um clique",
+      linkApple: "https://www.douglasfernandes.com.br",
+      linkGoogle: "",
+      component: <Formatagram />,
+    }
+  ]
+
+  const renderHeader = ({ title, slogan }) => (
     <CardHeader
-      title='Formatagram'
-      slogan="Formate legendas com um clique"
+      title={title}
+      slogan={slogan}
     />
   )
 
-  const renderBody = (
+  const renderBody = ({ component }) => (
     <CardBody>
-      <Formatagram />
+      { component }
     </CardBody>
   )
 
-  const renderFooter = (
+  const renderFooter = ({ linkApple, linkGoogle }) => (
     <CardFooter
-      linkApple="https://www.douglasfernandes.com.br"
-      linkGoogle=""
+      linkApple={linkApple}
+      linkGoogle={linkGoogle}
+    />
+  )
+
+  const renderCard = (product) => (
+    <Card
+      header={renderHeader(product)}
+      body={renderBody(product)}
+      footer={renderFooter(product)}
     />
   )
 
   return (
     <Styled.Wrapper>
-      <Card
-        header={renderHeader}
-        body={renderBody}
-        footer={renderFooter}
-      />
+      { products.map(product => renderCard(product)) }
     </Styled.Wrapper>
   )
 }
