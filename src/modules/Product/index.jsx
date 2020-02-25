@@ -12,7 +12,7 @@ const Product = () => {
     {
       title: "Formatagram",
       slogan: "Formate legendas com um clique",
-      linkApple: "https://www.douglasfernandes.com.br",
+      linkApple: "",
       linkGoogle: "",
       component: <Formatagram />,
     }

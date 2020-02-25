@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from '../Link'
+import Link from 'core/components/Link'
 import { BrowserRouter as Router } from "react-router-dom"
-import { PATH_ROOT } from '../../constants/paths'
-import { ReactComponent as InstagramSVG } from '../../assets/imgs/instagram.svg'
-import { ReactComponent as GitHubSVG } from '../../assets/imgs/github.svg'
-import { ReactComponent as LinkedInSVG } from '../../assets/imgs/linkedin.svg'
-import { ReactComponent as YouTubeSVG } from '../../assets/imgs/youtube.svg'
+import { PATH_ROOT } from 'core/constants/paths'
+import { ReactComponent as InstagramSVG } from 'core/assets/imgs/instagram.svg'
+import { ReactComponent as GitHubSVG } from 'core/assets/imgs/github.svg'
+import { ReactComponent as LinkedInSVG } from 'core/assets/imgs/linkedin.svg'
+import { ReactComponent as YouTubeSVG } from 'core/assets/imgs/youtube.svg'
 import Styled from './styled'
 
 const Navbar = () => {

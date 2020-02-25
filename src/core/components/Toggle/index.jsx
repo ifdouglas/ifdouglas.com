@@ -1,7 +1,7 @@
 import React from 'react'
 import { func, string } from 'prop-types'
-import { ReactComponent as MoonIcon } from '../../assets/imgs/moon.svg'
-import { ReactComponent as SunIcon } from '../../assets/imgs/sun.svg'
+import { ReactComponent as MoonIcon } from 'core/assets/imgs/moon.svg'
+import { ReactComponent as SunIcon } from 'core/assets/imgs/sun.svg'
 import Styled from './styled'
 
 const Toggle = ({ theme, toggleTheme }) => {

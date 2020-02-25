@@ -1,6 +1,6 @@
 import React from 'react'
-import Text from '../../Text'
-import { ReactComponent as FormatagramSVG } from '../../../assets/imgs/formatagram.svg'
+import Text from 'core/components/Text'
+import { ReactComponent as FormatagramSVG } from 'core/assets/imgs/formatagram.svg'
 import Styled from './styled'
 
 const CardHeader = ({ title, slogan }) => {
