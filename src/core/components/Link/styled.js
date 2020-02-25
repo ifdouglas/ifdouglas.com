@@ -1,7 +1,8 @@
+import React from 'react'
 import styled, { css } from 'styled-components'
 import { NavLink as ComponentNavLink } from 'react-router-dom'
 
-const Link = styled(ComponentNavLink)`
+const Link = styled(({ active, ...rest }) => <ComponentNavLink {...rest} />)`
   height: 70px;
   font-size: 23px;
   border: none;
