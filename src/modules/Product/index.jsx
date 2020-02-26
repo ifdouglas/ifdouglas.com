@@ -18,7 +18,7 @@ const Product = () => {
       logo: <FormatagramSVG />,
       title: "Formatagram",
       slogan: "Formate legendas com um clique",
-      linkApple: "",
+      linkApple: "https://apps.apple.com/br/app/formatagram/id1500141159",
       linkGoogle: "",
       data: Formatagram,
     }
