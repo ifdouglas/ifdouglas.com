@@ -19,7 +19,7 @@ const Product = () => {
       title: "Formatagram",
       slogan: "Formate legendas com um clique",
       linkApple: "https://apps.apple.com/br/app/formatagram/id1500141159",
-      linkGoogle: "",
+      linkGoogle: "https://play.google.com/store/apps/details?id=app.tuntz.formatagram",
       data: Formatagram,
     }
   ]
