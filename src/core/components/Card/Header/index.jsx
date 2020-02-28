@@ -4,7 +4,7 @@ import Text from 'core/components/Text'
 import { ReactComponent as NoLogoSVG } from 'core/assets/imgs/no-logo.svg'
 import Styled from './styled'
 
-const CardHeader = ({ logo, title, slogan }) => {
+const CardHeader = ({ logo, title, version }) => {
 
   const renderLogo = () => (
     <Styled.Logo>
@@ -14,14 +14,14 @@ const CardHeader = ({ logo, title, slogan }) => {
 
   const renderTitle = () => <Text type="h1"> { title } </Text>
 
-  const renderSlogan = () => <Text type="h5"> { slogan } </Text>
+  const renderVersion = () => <Text type="h6"> { version } </Text>
 
   return (
     <Styled.Header>
       { renderLogo() }
       <Styled.Title>
         { renderTitle() }
-        { renderSlogan() }
+        { version && renderVersion() }
       </Styled.Title>
     </Styled.Header>
   )
@@ -30,13 +30,13 @@ const CardHeader = ({ logo, title, slogan }) => {
 CardHeader.defaultProps = {
   logo: <NoLogoSVG />,
   title: '-',
-  slogan: '-',
+  version: 'v0',
 }
 
 CardHeader.propTypes = {
   logo: PropTypes.node,
   title: PropTypes.string,
-  sloagan: PropTypes.string,
+  version: PropTypes.string,
 }
 
 export default CardHeader

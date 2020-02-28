@@ -20,13 +20,6 @@ const Navbar = () => {
           App Engineer 
         </Styled.Subtitle>
       </Styled.Header>
-      <Styled.Body>
-        <Router>
-          <Link active to={PATH_ROOT}>
-            Produtos
-          </Link>
-        </Router>
-      </Styled.Body>
       <Styled.Footer>
         <Styled.Link href="https://www.instagram.com/ifdouglas" target="_blank">
           <InstagramSVG />
@@ -41,9 +34,6 @@ const Navbar = () => {
           <YouTubeSVG />
         </Styled.Link>
       </Styled.Footer>
-      <Styled.Legend>
-        © COPYRIGHT 2020
-      </Styled.Legend>
     </Styled.Wrapper>
   )
 }

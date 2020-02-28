@@ -17,17 +17,18 @@ const Product = () => {
     {
       logo: <FormatagramSVG />,
       title: "Formatagram",
-      slogan: "Formate legendas com um clique",
+      version: "Versão 1.2 • 28 de Fevereiro de 2020",
       linkApple: "https://apps.apple.com/br/app/formatagram/id1500141159",
       linkGoogle: "https://play.google.com/store/apps/details?id=app.tuntz.formatagram",
       data: Formatagram,
     }
   ]
 
-  const renderHeader = ({ logo, title, slogan }) => (
+  const renderHeader = ({ logo, title, slogan, version }) => (
     <CardHeader
       logo={logo}
       title={title}
+      version={version}
       slogan={slogan}
     />
   )

@@ -9,13 +9,15 @@ const ButtonGoogle = ({ url }) => {
     window.open(url, '_blank')
   }
 
-  const renderApple = () => (
+  const renderButton = () => (
     <Styled.Button onClick={goTo}>
       <GooglePlaySVG />
     </Styled.Button>
   )
 
-  return url ? renderApple() : <GooglePlaySoonSVG />
+  const renderEmpty = () => <GooglePlaySoonSVG />
+
+  return url ? renderButton() : renderEmpty()
 }
 
 export default ButtonGoogle
