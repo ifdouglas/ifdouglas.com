@@ -18,19 +18,15 @@ const Product = () => {
       logo: <FormatagramSVG />,
       title: "Formatagram",
       version: "Versão 1.2 • 28 de Fevereiro de 2020",
+      technology: "Desenvolvido em Flutter",
       linkApple: "https://apps.apple.com/br/app/formatagram/id1500141159",
       linkGoogle: "https://play.google.com/store/apps/details?id=app.tuntz.formatagram",
       data: Formatagram,
     }
   ]
 
-  const renderHeader = ({ logo, title, slogan, version }) => (
-    <CardHeader
-      logo={logo}
-      title={title}
-      version={version}
-      slogan={slogan}
-    />
+  const renderHeader = ({ ...rest }) => (
+    <CardHeader { ...rest }/>
   )
 
   const renderBody = ({ data }) => (
