@@ -50,6 +50,7 @@ export const darkTheme = {
   navbar: {
     background: COLOR_LICORICE,
     color: COLOR_WHITE,
+    shadow: COLOR_BLUE_ZODIAC,
   },
   link: {
     background: COLOR_WHITE,

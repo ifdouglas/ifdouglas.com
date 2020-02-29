@@ -3,19 +3,20 @@ import { ReactComponent as InstagramSVG } from 'core/assets/imgs/instagram.svg'
 import { ReactComponent as GitHubSVG } from 'core/assets/imgs/github.svg'
 import { ReactComponent as LinkedInSVG } from 'core/assets/imgs/linkedin.svg'
 import { ReactComponent as YouTubeSVG } from 'core/assets/imgs/youtube.svg'
+import { ReactComponent as IFSVG } from 'core/assets/imgs/IF.svg'
+import Text from 'core/components/Text'
 import Styled from './styled'
 
 const Navbar = () => {
 
   return (
     <Styled.Wrapper>
+      <Styled.Logo>
+        <IFSVG />
+      </Styled.Logo>
       <Styled.Header>
-        <Styled.Title>
-          Douglas Fernandes
-        </Styled.Title>
-        <Styled.Subtitle>
-          App Engineer
-        </Styled.Subtitle>
+        <Text type="h3"> Douglas Fernandes </Text>
+        <Text type="h6"> App Engineer </Text>
       </Styled.Header>
       <Styled.Footer>
         <Styled.Link href="https://www.instagram.com/ifdouglas" target="_blank">

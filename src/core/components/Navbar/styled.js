@@ -25,7 +25,7 @@ const Header = styled.section`
   flex-direction: column;
   justify-self: flex-start;
   align-items: flex-start;
-  margin-left: 30px;
+  margin: 4px 10px;
 `
 
 const Legend = styled.span`
@@ -37,14 +37,13 @@ const Legend = styled.span`
   font-size: 11px;
 `
 
-const Subtitle = styled.span`
-  font-size: 11px;
-  font-family: RoobertLight;
-`
-
-const Title = styled.span`
-  font-size: 21px;
-  font-family: RoobertBold;
+const Logo = styled.div`
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const Wrapper = styled.section`
@@ -54,12 +53,14 @@ const Wrapper = styled.section`
   flex-direction: row;
   height: 50px;
   width: 100%;
+  box-shadow: 0px 2px 4px 0px ${({ theme }) => theme.navbar.shadow};
 `
 
 const Link = styled.a`
   text-decoration: none;
   cursor: default;
   transform: scale(0.8);
+  transition: 0.4s;
 
   :hover {
     transform: scale(1);
@@ -76,7 +77,6 @@ export default {
   Footer,
   Header,
   Legend,
-  Title,
-  Subtitle,
+  Logo,
   Wrapper,
 }
