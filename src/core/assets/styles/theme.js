@@ -6,8 +6,9 @@ export const COLOR_WHITE = '#FFFFFF'
 export const lightTheme = {
   body: COLOR_WHITE,
   navbar: {
-    background: COLOR_LICORICE,
+    background: COLOR_BLUE_ZODIAC,
     color: COLOR_WHITE,
+    shadow: COLOR_BLUE_ZODIAC,
   },
   link: {
     background: COLOR_WHITE,
@@ -41,7 +42,8 @@ export const lightTheme = {
     shadow: COLOR_LICORICE,
   },
   text: COLOR_BLUE_ZODIAC,
-  toggleBorder: COLOR_WHITE,
+  dots: COLOR_BLUE_ZODIAC,
+  toggleBorder: COLOR_BLUE_ZODIAC,
   gradient: 'linear-gradient(#39598A, #79D7ED)',
 }
 
@@ -55,7 +57,7 @@ export const darkTheme = {
   link: {
     background: COLOR_WHITE,
     color: COLOR_BLUE_ZODIAC,
-    shadow: COLOR_LICORICE,
+    shadow: COLOR_BLUE_ZODIAC,
     active: {
       background: COLOR_BLUE_ZODIAC,
       color: COLOR_WHITE,
@@ -84,6 +86,7 @@ export const darkTheme = {
     shadow: COLOR_LICORICE,
   },
   text: COLOR_WHITE,
+  dots: COLOR_WHITE,
   toggleBorder: COLOR_LICORICE,
   gradient: 'linear-gradient(#091236, #1E215D)',
 }

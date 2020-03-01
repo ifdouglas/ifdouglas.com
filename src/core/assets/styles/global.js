@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 import Roobert from '../fonts/Roobert-Regular.otf'
 import RoobertLight from '../fonts/Roobert-Light.otf'
 import RoobertMedium from '../fonts/Roobert-Medium.otf'
@@ -47,9 +50,13 @@ export const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  // override for react-slick lib
+  // overrides for react-slick lib
   .slick-dots > li > button:before {
-    color: #fff !important;
+    color: ${({ theme }) => theme.dots} !important;
+  }
+
+  .slick-prev::before, .slick-next::before {
+    color: ${({ theme }) => theme.dots} !important;
   }
 
   code {
