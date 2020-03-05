@@ -1,70 +1,78 @@
-import React from 'react'
-import Card from 'core/components/Card'
-import CardHeader from 'core/components/Card/Header'
-import CardBody from 'core/components/Card/Body'
-import CardFooter from 'core/components/Card/Footer'
-import ButtonApple from 'core/components/Button/Apple'
-import ButtonGoogle from 'core/components/Button/Google'
-import Slider from 'core/components/Slider'
-import SliderItem from 'core/components/Slider/Item'
-import Formatagram from './Formatagram'
-import { ReactComponent as FormatagramSVG } from 'core/assets/imgs/formatagram.svg'
-import Styled from './styled'
+import React from "react";
+import Card from "core/components/Card";
+import CardHeader from "core/components/Card/Header";
+import CardBody from "core/components/Card/Body";
+import CardFooter from "core/components/Card/Footer";
+import ButtonApple from "core/components/Button/Apple";
+import ButtonGoogle from "core/components/Button/Google";
+import Slider from "core/components/Slider";
+import SliderItem from "core/components/Slider/Item";
+import Formatagram from "./Formatagram";
+import DiseaseTracker from "./DiseaseTracker";
+import { ReactComponent as FormatagramSVG } from "core/assets/imgs/formatagram.svg";
+import Styled from "./styled";
 
 const Product = () => {
-
   const products = [
     {
       logo: <FormatagramSVG />,
       title: "Formatagram",
-      version: "Versão 1.2 • 28 de Fevereiro de 2020",
+      version: "Versão 1.2.1 • 04 de Março de 2020",
       technology: "Desenvolvido em Flutter",
       linkApple: "https://apps.apple.com/br/app/formatagram/id1500141159",
-      linkGoogle: "https://play.google.com/store/apps/details?id=app.tuntz.formatagram",
-      data: Formatagram,
+      linkGoogle:
+        "https://play.google.com/store/apps/details?id=app.tuntz.formatagram",
+      data: Formatagram
+    },
+    {
+      logo: <FormatagramSVG />,
+      title: "Coronavirus Real-time Tracker",
+      version: "Versão 1.0 • 05 de Março de 2020",
+      technology: "Desenvolvido em Flutter",
+      linkApple: "",
+      linkGoogle: "",
+      data: DiseaseTracker
     }
-  ]
+  ];
 
-  const renderHeader = ({ ...rest }) => (
-    <CardHeader { ...rest }/>
-  )
+  const renderHeader = ({ ...rest }) => <CardHeader {...rest} />;
 
   const renderBody = ({ data }) => (
     <CardBody>
       <Slider>
-        { data.map(({ image, title, description }) => (
+        {data.map(({ image, title, description }) => (
           <SliderItem
             key={title}
             image={image}
             title={title}
             description={description}
           />
-        )) }
+        ))}
       </Slider>
     </CardBody>
-  )
+  );
 
   const renderFooter = ({ linkApple, linkGoogle }) => (
     <CardFooter>
       <ButtonApple url={linkApple} />
       <ButtonGoogle url={linkGoogle} />
     </CardFooter>
-  )
+  );
 
-  const renderCard = (product) => (
+  const renderCard = product => (
     <Card
       key={product}
       header={renderHeader(product)}
       body={renderBody(product)}
       footer={renderFooter(product)}
     />
-  )
+  );
 
   return (
     <Styled.Wrapper>
-      { products.map(product => renderCard(product)) }
+      {products.map(product => renderCard(product))}
     </Styled.Wrapper>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
