@@ -1,25 +1,25 @@
 import React from "react";
-import { ReactComponent as FormatagramSlide1SVG } from "core/assets/imgs/formatagram-slide1.svg";
-import { ReactComponent as FormatagramSlide2SVG } from "core/assets/imgs/formatagram-slide2.svg";
-import { ReactComponent as FormatagramSlide3SVG } from "core/assets/imgs/formatagram-slide3.svg";
+import { ReactComponent as CoronavirusSlide1SVG } from "core/assets/imgs/coronavirus-slide1.svg";
+import { ReactComponent as CoronavirusSlide2SVG } from "core/assets/imgs/coronavirus-slide2.svg";
+import { ReactComponent as CoronavirusSlide3SVG } from "core/assets/imgs/coronavirus-slide3.svg";
 
 export default [
   {
-    image: <FormatagramSlide1SVG />,
-    title: "Escreva sua legenda",
+    image: <CoronavirusSlide1SVG />,
+    title: "Escanear proximidades",
     description:
-      "Coloque quantos espaços quiser, que nós garantimos que eles vão estar lá quando você postar."
+      "Descubra o caso de Coronavirus mais perto de você e previna-se."
   },
   {
-    image: <FormatagramSlide2SVG />,
-    title: "Leitura agradável",
+    image: <CoronavirusSlide2SVG />,
+    title: "Proliferação do vírus",
     description:
-      "Sem pontos perdidos no seu texto, ler volta a ser algo natural e agradável. Seu público agradece."
+      "Utilizando os poderes do Google Maps é possível mostrar a proliferação do vírus ao redor do mundo."
   },
   {
-    image: <FormatagramSlide3SVG />,
-    title: "Aumente seu engajamento",
+    image: <CoronavirusSlide3SVG />,
+    title: "Combate e prevenção",
     description:
-      "O tempo que você perdia editando legenda, agora é convertido em mais tempo para engajamento do seu público."
+      "Fornecendo dados para rastreamento em tempo real, ajudando equipes de saúde."
   }
 ];

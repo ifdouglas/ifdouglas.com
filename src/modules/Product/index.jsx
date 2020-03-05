@@ -7,34 +7,10 @@ import ButtonApple from "core/components/Button/Apple";
 import ButtonGoogle from "core/components/Button/Google";
 import Slider from "core/components/Slider";
 import SliderItem from "core/components/Slider/Item";
-import Formatagram from "./Formatagram";
-import DiseaseTracker from "./DiseaseTracker";
-import { ReactComponent as FormatagramSVG } from "core/assets/imgs/formatagram.svg";
+import products from "./data";
 import Styled from "./styled";
 
 const Product = () => {
-  const products = [
-    {
-      logo: <FormatagramSVG />,
-      title: "Formatagram",
-      version: "Versão 1.2.1 • 04 de Março de 2020",
-      technology: "Desenvolvido em Flutter",
-      linkApple: "https://apps.apple.com/br/app/formatagram/id1500141159",
-      linkGoogle:
-        "https://play.google.com/store/apps/details?id=app.tuntz.formatagram",
-      data: Formatagram
-    },
-    {
-      logo: <FormatagramSVG />,
-      title: "Coronavirus Real-time Tracker",
-      version: "Versão 1.0 • 05 de Março de 2020",
-      technology: "Desenvolvido em Flutter",
-      linkApple: "",
-      linkGoogle: "",
-      data: DiseaseTracker
-    }
-  ];
-
   const renderHeader = ({ ...rest }) => <CardHeader {...rest} />;
 
   const renderBody = ({ data }) => (
