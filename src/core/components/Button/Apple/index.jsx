@@ -1,21 +1,18 @@
 import React from 'react'
-import { ReactComponent as AppleStoreSVG } from 'core/assets/imgs/apple.svg'
-import { ReactComponent as AppleStoreSoonSVG } from 'core/assets/imgs/apple-soon.svg'
+import Button from 'core/components/Button/Default'
 import Styled from './styled'
 
 const ButtonApple = ({ url }) => {
 
-  const goTo = () => {
-    window.open(url, '_blank')
-  }
-
-  const renderApple = () => (
-    <Styled.Button onClick={goTo}>
-      <AppleStoreSVG />
-    </Styled.Button>
+  const renderButton = () => (
+    <Button url={url}>
+      <Styled.DefaultSVG />
+    </Button>
   )
 
-  return url ? renderApple() : <AppleStoreSoonSVG />
+  const renderEmpty = () => <Styled.SoonSVG />
+
+  return url ? renderButton() : renderEmpty()
 }
 
 export default ButtonApple

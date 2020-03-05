@@ -1,6 +1,20 @@
 import styled, { css } from 'styled-components'
 
-const Body = styled.main`
+
+const Header = styled.section`
+  display: flex;
+  flex-direction: row;
+`
+
+const Title = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: flex-start;
+  margin: 4px 10px;
+`
+
+const Body = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,20 +26,11 @@ const Footer = styled.section`
   flex-direction: row;
   justify-self: flex-end;
   align-items: center;
-  margin-left: auto;
   margin-right: 20px;
 
   * + * {
     margin-left: 5px;
   }
-`
-
-const Header = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-self: flex-start;
-  align-items: flex-start;
-  margin: 4px 10px;
 `
 
 const Legend = styled.span`
@@ -51,6 +56,7 @@ const Wrapper = styled.section`
   color: ${({ theme }) => theme.navbar.color};
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 50px;
   width: 100%;
   box-shadow: 0px 2px 4px 0px ${({ theme }) => theme.navbar.shadow};
@@ -75,6 +81,7 @@ export default {
   Body,
   Link,
   Footer,
+  Title,
   Header,
   Legend,
   Logo,

@@ -7,17 +7,22 @@ import { ReactComponent as LogoSVG } from 'core/assets/imgs/logo.svg'
 import Text from 'core/components/Text'
 import Styled from './styled'
 
-const Navbar = () => {
+const Navbar = ({ children }) => {
 
   return (
     <Styled.Wrapper>
-      <Styled.Logo>
-        <LogoSVG />
-      </Styled.Logo>
       <Styled.Header>
-        <Text type="h3"> Douglas Fernandes </Text>
-        <Text type="h6"> App Engineer </Text>
+        <Styled.Logo>
+          <LogoSVG />
+        </Styled.Logo>
+        <Styled.Title>
+          <Text type="h3"> Douglas Fernandes </Text>
+          <Text type="h6"> App Engineer </Text>
+        </Styled.Title>
       </Styled.Header>
+      <Styled.Body>
+        { children }
+      </Styled.Body>
       <Styled.Footer>
         <Styled.Link href="https://www.instagram.com/ifdouglas" target="_blank">
           <InstagramSVG />

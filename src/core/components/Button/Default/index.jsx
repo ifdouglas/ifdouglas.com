@@ -1,13 +1,17 @@
 import React from 'react'
 import Styled from './styled'
 
-const ButtonNav = () => {
+const ButtonGoogle = ({ url, children }) => {
+
+  const goTo = () => {
+    window.open(url, '_blank')
+  }
 
   return (
-    <Styled.Button>
-      
+    <Styled.Button onClick={goTo}>
+      { children }
     </Styled.Button>
   )
 }
 
-export default ButtonNav
+export default ButtonGoogle

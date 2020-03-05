@@ -12,8 +12,8 @@ const Wrapper = styled.button`
   overflow: hidden;
   padding: 0.5rem;
   position: relative;
-  width: 8rem;
-  height: 4rem;
+  width: 80px;
+  height: 40px;
 
   svg {
     height: auto;
