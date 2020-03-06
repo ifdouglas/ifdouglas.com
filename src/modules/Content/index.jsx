@@ -1,13 +1,8 @@
-import React from 'react'
-import Styled from './styled'
+import React from "react";
+import Styled from "./styled";
 
 const Content = () => {
+  return <Styled.Wrapper>Content</Styled.Wrapper>;
+};
 
-  return (
-    <Styled.Wrapper>
-      Content
-    </Styled.Wrapper>
-  )
-}
-
-export default Content
+export default Content;

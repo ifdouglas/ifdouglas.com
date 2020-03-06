@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Button = styled.a`
   text-decoration: none;
@@ -6,10 +6,10 @@ const Button = styled.a`
   transition: 0.4s;
 
   :hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
-`
+`;
 
 export default {
-  Button,
-}
+  Button
+};

@@ -1,10 +1,9 @@
-import styled, { css } from 'styled-components'
-
+import styled, { css } from "styled-components";
 
 const Header = styled.section`
   display: flex;
   flex-direction: row;
-`
+`;
 
 const Title = styled.section`
   display: flex;
@@ -12,14 +11,14 @@ const Title = styled.section`
   justify-self: flex-start;
   align-items: flex-start;
   margin: 4px 10px;
-`
+`;
 
 const Body = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 const Footer = styled.section`
   display: flex;
@@ -31,7 +30,7 @@ const Footer = styled.section`
   * + * {
     margin-left: 5px;
   }
-`
+`;
 
 const Legend = styled.span`
   display: flex;
@@ -40,7 +39,7 @@ const Legend = styled.span`
   align-items: center;
   font-variant: small-caps;
   font-size: 11px;
-`
+`;
 
 const Logo = styled.div`
   width: 50px;
@@ -49,7 +48,7 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const Wrapper = styled.section`
   background: ${({ theme }) => theme.navbar.background};
@@ -60,7 +59,7 @@ const Wrapper = styled.section`
   height: 50px;
   width: 100%;
   box-shadow: 0px 2px 4px 0px ${({ theme }) => theme.navbar.shadow};
-`
+`;
 
 const Link = styled.a`
   text-decoration: none;
@@ -72,10 +71,12 @@ const Link = styled.a`
     transform: scale(1);
   }
 
-  ${({ href }) => href && css`
-    cursor: pointer;
-  `}
-`
+  ${({ href }) =>
+    href &&
+    css`
+      cursor: pointer;
+    `}
+`;
 
 export default {
   Body,
@@ -85,5 +86,5 @@ export default {
   Header,
   Legend,
   Logo,
-  Wrapper,
-}
+  Wrapper
+};

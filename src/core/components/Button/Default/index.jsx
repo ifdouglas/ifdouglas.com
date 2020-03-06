@@ -1,17 +1,12 @@
-import React from 'react'
-import Styled from './styled'
+import React from "react";
+import Styled from "./styled";
 
 const ButtonGoogle = ({ url, children }) => {
-
   const goTo = () => {
-    window.open(url, '_blank')
-  }
+    window.open(url, "_blank");
+  };
 
-  return (
-    <Styled.Button onClick={goTo}>
-      { children }
-    </Styled.Button>
-  )
-}
+  return <Styled.Button onClick={goTo}>{children}</Styled.Button>;
+};
 
-export default ButtonGoogle
+export default ButtonGoogle;

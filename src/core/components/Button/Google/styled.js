@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { ReactComponent as ButtonGoogleSVG } from 'core/assets/imgs/google-play.svg'
-import { ReactComponent as ButtonGoogleSoonSVG } from 'core/assets/imgs/google-soon.svg'
+import styled from "styled-components";
+import { ReactComponent as ButtonGoogleSVG } from "core/assets/imgs/google-play.svg";
+import { ReactComponent as ButtonGoogleSoonSVG } from "core/assets/imgs/google-soon.svg";
 
 const DefaultSVG = styled(ButtonGoogleSVG)`
   #Google-Play-Button {
@@ -16,7 +16,7 @@ const DefaultSVG = styled(ButtonGoogleSVG)`
       fill: ${({ theme }) => theme.button.background};
     }
   }
-`
+`;
 
 const SoonSVG = styled(ButtonGoogleSoonSVG)`
   g > rect {
@@ -30,9 +30,9 @@ const SoonSVG = styled(ButtonGoogleSoonSVG)`
   #Google-Play-Logo {
     fill: ${({ theme }) => theme.button.background};
   }
-`
+`;
 
 export default {
   DefaultSVG,
-  SoonSVG,
-}
+  SoonSVG
+};

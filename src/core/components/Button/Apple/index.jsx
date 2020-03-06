@@ -1,18 +1,17 @@
-import React from 'react'
-import Button from 'core/components/Button/Default'
-import Styled from './styled'
+import React from "react";
+import Button from "core/components/Button/Default";
+import Styled from "./styled";
 
 const ButtonApple = ({ url }) => {
-
   const renderButton = () => (
     <Button url={url}>
       <Styled.DefaultSVG />
     </Button>
-  )
+  );
 
-  const renderEmpty = () => <Styled.SoonSVG />
+  const renderEmpty = () => <Styled.SoonSVG />;
 
-  return url ? renderButton() : renderEmpty()
-}
+  return url ? renderButton() : renderEmpty();
+};
 
-export default ButtonApple
+export default ButtonApple;

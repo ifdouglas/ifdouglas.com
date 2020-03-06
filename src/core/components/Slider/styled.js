@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import Slider from 'react-slick'
+import styled from "styled-components";
+import Slider from "react-slick";
 
 const SliderWrapper = styled(Slider)`
   width: 330px;
@@ -8,8 +8,8 @@ const SliderWrapper = styled(Slider)`
   svg {
     margin-bottom: 50px;
   }
-`
+`;
 
 export default {
   Slider: SliderWrapper
-}
+};

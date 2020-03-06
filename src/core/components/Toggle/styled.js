@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.button`
   background: ${({ theme }) => theme.gradient};
@@ -21,15 +21,17 @@ const Wrapper = styled.button`
     transition: all 0.3s linear;
 
     &:first-child {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateY(0)' : 'translateY(100px)'};
+      transform: ${({ lightTheme }) =>
+        lightTheme ? "translateY(0)" : "translateY(100px)"};
     }
 
     &:nth-child(2) {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateY(-100px)' : 'translateY(0)'};
+      transform: ${({ lightTheme }) =>
+        lightTheme ? "translateY(-100px)" : "translateY(0)"};
     }
   }
 `;
 
 export default {
   Wrapper
-}
+};

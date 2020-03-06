@@ -1,17 +1,14 @@
-import React from 'react'
-import { func, string } from 'prop-types'
-import { ReactComponent as MoonIcon } from 'core/assets/imgs/moon.svg'
-import { ReactComponent as SunIcon } from 'core/assets/imgs/sun.svg'
-import Styled from './styled'
+import React from "react";
+import { func, string } from "prop-types";
+import { ReactComponent as MoonIcon } from "core/assets/imgs/moon.svg";
+import { ReactComponent as SunIcon } from "core/assets/imgs/sun.svg";
+import Styled from "./styled";
 
 const Toggle = ({ theme, toggleTheme }) => {
-  const isLight = theme === 'light'
+  const isLight = theme === "light";
 
   return (
-    <Styled.Wrapper
-      lightTheme={isLight}
-      onClick={toggleTheme}
-    >
+    <Styled.Wrapper lightTheme={isLight} onClick={toggleTheme}>
       <SunIcon />
       <MoonIcon />
     </Styled.Wrapper>
@@ -20,7 +17,7 @@ const Toggle = ({ theme, toggleTheme }) => {
 
 Toggle.propTypes = {
   theme: string.isRequired,
-  toggleTheme: func.isRequired,
-}
+  toggleTheme: func.isRequired
+};
 
-export default Toggle
+export default Toggle;

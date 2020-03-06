@@ -1,6 +1,6 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-import { NavLink as ComponentNavLink } from 'react-router-dom'
+import React from "react";
+import styled, { css } from "styled-components";
+import { NavLink as ComponentNavLink } from "react-router-dom";
 
 const Link = styled(({ active, ...rest }) => <ComponentNavLink {...rest} />)`
   height: 70px;
@@ -24,25 +24,27 @@ const Link = styled(({ active, ...rest }) => <ComponentNavLink {...rest} />)`
     box-shadow: 0px 10px 30px 0px ${({ theme }) => theme.link.shadow};
   }
 
-  ${({ active }) => active && css`
-    background: ${({ theme }) => theme.link.active.background};
-    color: ${({ theme }) => theme.link.active.color};
-    box-shadow: -30px 10px 30px 0px ${({ theme }) => theme.link.active.shadow};
-    width: 305px;
-    height: 120px;
-    margin-right: -55px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-
-    :hover {
-      cursor: pointer;
+  ${({ active }) =>
+    active &&
+    css`
       background: ${({ theme }) => theme.link.active.background};
       color: ${({ theme }) => theme.link.active.color};
-      box-shadow: -10px 10px 10px 0px ${({ theme }) => theme.link.shadow};
-    }
-  `}
-`
+      box-shadow: -30px 10px 30px 0px ${({ theme }) => theme.link.active.shadow};
+      width: 305px;
+      height: 120px;
+      margin-right: -55px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+
+      :hover {
+        cursor: pointer;
+        background: ${({ theme }) => theme.link.active.background};
+        color: ${({ theme }) => theme.link.active.color};
+        box-shadow: -10px 10px 10px 0px ${({ theme }) => theme.link.shadow};
+      }
+    `}
+`;
 
 export default {
-  Link,
-}
+  Link
+};

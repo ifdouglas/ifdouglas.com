@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const SliderItem = styled.div`
   display: flex !important;
@@ -6,7 +6,7 @@ const SliderItem = styled.div`
   align-items: center !important;
   flex-direction: column !important;
   height: 500px;
-`
+`;
 
 const Caption = styled.div`
   width: 290px;
@@ -18,9 +18,9 @@ const Caption = styled.div`
     justify-content: center;
     align-items: center;
   }
-`
+`;
 
 export default {
   SliderItem,
-  Caption,
-}
+  Caption
+};
