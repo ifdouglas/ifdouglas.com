@@ -7,6 +7,7 @@ import ButtonApple from "core/components/Button/Apple";
 import ButtonGoogle from "core/components/Button/Google";
 import Slider from "core/components/Slider";
 import SliderItem from "core/components/Slider/Item";
+import { ReactComponent as MeSVG } from 'core/assets/imgs/me2.svg'
 import products from "./data";
 import Styled from "./styled";
 
@@ -46,6 +47,9 @@ const Product = () => {
 
   return (
     <Styled.Wrapper>
+      <Styled.Me>
+        <MeSVG />
+      </Styled.Me>
       {products.map(product => renderCard(product))}
     </Styled.Wrapper>
   );

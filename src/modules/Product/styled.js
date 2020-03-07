@@ -11,6 +11,17 @@ const Wrapper = styled.article`
   }
 `;
 
+const Me = styled.section`
+  position: absolute;
+  left: -74px;
+  z-index: 1;
+
+  svg {
+    height: 700px;
+  }
+`;
+
 export default {
+  Me,
   Wrapper
 };
