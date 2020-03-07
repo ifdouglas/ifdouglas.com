@@ -15,7 +15,7 @@ const Navbar = ({ children }) => {
           <LogoSVG />
         </Styled.Logo>
         <Styled.Title>
-          <Text type="h3"> Douglas Fernandes </Text>
+          <Text type="h3"> Douglas </Text>
           <Text type="h6"> App Engineer </Text>
         </Styled.Title>
       </Styled.Header>
