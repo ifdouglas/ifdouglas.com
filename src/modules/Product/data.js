@@ -22,7 +22,7 @@ export default [
     version: "Versão 1.0 • 05 de Março de 2020",
     technology: "Desenvolvido em Flutter",
     linkApple: "",
-    linkGoogle: "",
+    linkGoogle: "https://play.google.com/store/apps/details?id=app.tuntz.DiseaseTracker",
     data: DiseaseTracker
   }
 ];
