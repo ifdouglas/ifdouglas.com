@@ -13,6 +13,7 @@ const Wrapper = styled.article`
 
 const run = keyframes`
   0% { left: -300px;}
+  50% { left: -100px;}
   100%{ left: -74px;}
 `;
 
@@ -21,6 +22,7 @@ const Me = styled.section`
   animation: ease-in-out infinite alternate;
   animation-name: ${run};
   animation-duration: 5s;
+  animation-delay: 3s;
   left: -300px;
   z-index: 1;
 
