@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.article`
   display: flex;
@@ -11,9 +11,17 @@ const Wrapper = styled.article`
   }
 `;
 
+const run = keyframes`
+  0% { left: -300px;}
+  100%{ left: -74px;}
+`;
+
 const Me = styled.section`
   position: absolute;
-  left: -74px;
+  animation: ease-in-out infinite alternate;
+  animation-name: ${run};
+  animation-duration: 5s;
+  left: -300px;
   z-index: 1;
 
   svg {

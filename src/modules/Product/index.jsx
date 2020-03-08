@@ -51,6 +51,9 @@ const Product = () => {
         <MeSVG />
       </Styled.Me>
       {products.map(product => renderCard(product))}
+      {/* <Styled.Me>
+        <MeSVG />
+      </Styled.Me> */}
     </Styled.Wrapper>
   );
 };
