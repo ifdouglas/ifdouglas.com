@@ -17,7 +17,7 @@ const run = keyframes`
   100%{ left: -74px;}
 `;
 
-const Me = styled.section`
+const SideAnimation = styled.section`
   position: absolute;
   animation: ease-in-out infinite alternate;
   animation-name: ${run};
@@ -32,6 +32,6 @@ const Me = styled.section`
 `;
 
 export default {
-  Me,
+  SideAnimation,
   Wrapper
 };

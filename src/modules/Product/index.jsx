@@ -47,9 +47,9 @@ const Product = () => {
 
   return (
     <Styled.Wrapper>
-      <Styled.Me>
+      <Styled.SideAnimation>
         <MeSVG />
-      </Styled.Me>
+      </Styled.SideAnimation>
       {products.map(product => renderCard(product))}
       {/* <Styled.Me>
         <MeSVG />
