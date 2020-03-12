@@ -1,13 +1,23 @@
 import styled, { keyframes } from "styled-components";
+import { respondTo } from 'core/assets/styles/_respontTo';
 
 const Wrapper = styled.article`
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
   padding: 20px 100px;
 
+  ${respondTo.md`
+		flex-direction: column;
+	`}
+
   > * + * {
     margin-left: 20px;
+
+    ${respondTo.md`
+      margin-top: 40px;
+    `}
   }
 `;
 
