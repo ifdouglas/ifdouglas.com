@@ -8,14 +8,14 @@ const Wrapper = styled.article`
   justify-content: center;
   padding: 20px 100px;
 
-  ${respondTo.md`
+  ${respondTo.laptop`
 		flex-direction: column;
 	`}
 
   > * + * {
     margin-left: 20px;
 
-    ${respondTo.md`
+    ${respondTo.laptop`
       margin-top: 40px;
     `}
   }
