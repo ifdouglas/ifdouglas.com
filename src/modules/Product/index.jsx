@@ -5,6 +5,7 @@ import CardBody from "core/components/Card/Body";
 import CardFooter from "core/components/Card/Footer";
 import ButtonApple from "core/components/Button/Apple";
 import ButtonGoogle from "core/components/Button/Google";
+import ButtonWeb from "core/components/Button/Web";
 import Slider from "core/components/Slider";
 import SliderItem from "core/components/Slider/Item";
 import { ReactComponent as MeSVG } from 'core/assets/imgs/me2.svg'
@@ -29,16 +30,17 @@ const Product = () => {
     </CardBody>
   );
 
-  const renderFooter = ({ linkApple, linkGoogle }) => (
+  const renderFooter = ({ linkApple, linkGoogle, linkWeb }) => (
     <CardFooter>
-      <ButtonApple url={linkApple} />
-      <ButtonGoogle url={linkGoogle} />
+      { linkApple && <ButtonApple url={linkApple} /> }
+      { linkGoogle && <ButtonGoogle url={linkGoogle} /> }
+      { linkWeb && <ButtonWeb url={linkWeb} /> }
     </CardFooter>
   );
 
   const renderCard = product => (
     <Card
-      key={product}
+      key={product.title}
       header={renderHeader(product)}
       body={renderBody(product)}
       footer={renderFooter(product)}

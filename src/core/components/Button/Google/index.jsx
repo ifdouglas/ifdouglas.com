@@ -11,7 +11,7 @@ const ButtonGoogle = ({ url }) => {
 
   const renderEmpty = () => <Styled.SoonSVG />;
 
-  return url ? renderButton() : renderEmpty();
+  return url !== '#' ? renderButton() : renderEmpty();
 };
 
 export default ButtonGoogle;

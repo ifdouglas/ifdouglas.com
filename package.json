@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "lab": "BROWSER=none yarn start",
+    "lab": "yarn start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"

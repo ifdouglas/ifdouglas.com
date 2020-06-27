@@ -3,6 +3,7 @@ import { ReactComponent as InstagramSVG } from "core/assets/imgs/instagram.svg";
 import { ReactComponent as GitHubSVG } from "core/assets/imgs/github.svg";
 import { ReactComponent as LinkedInSVG } from "core/assets/imgs/linkedin.svg";
 // import { ReactComponent as YouTubeSVG } from "core/assets/imgs/youtube.svg";
+// import { ReactComponent as TwitterSVG } from "core/assets/imgs/twitter.svg";
 import { ReactComponent as LogoSVG } from "core/assets/imgs/logo.svg";
 import Text from "core/components/Text";
 import Styled from "./styled";
@@ -21,6 +22,9 @@ const Navbar = ({ children }) => {
       </Styled.Header>
       <Styled.Body>{children}</Styled.Body>
       <Styled.Footer>
+        {/* <Styled.Link href="https://www.twitter.com/ifdouglas" target="_blank">
+          <TwitterSVG />
+        </Styled.Link> */}
         <Styled.Link href="https://www.instagram.com/ifdouglas" target="_blank">
           <InstagramSVG />
         </Styled.Link>

@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 const Footer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
+
+  > * + * {
+    margin-left: 10px;
+  }
 `;
 
 export default {

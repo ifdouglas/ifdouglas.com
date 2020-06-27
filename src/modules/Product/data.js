@@ -1,8 +1,8 @@
 import React from "react";
 import Formatagram from "./Formatagram";
-import DiseaseTracker from "./DiseaseTracker";
+import Coffing from "./Coffing";
 import { ReactComponent as FormatagramSVG } from "core/assets/imgs/formatagram.svg";
-import { ReactComponent as CoronavirusSVG } from "core/assets/imgs/coronavirus.svg";
+import { ReactComponent as CoffingSVG } from "core/assets/imgs/coffing.svg";
 
 export default [
   {
@@ -16,13 +16,11 @@ export default [
     data: Formatagram
   },
   {
-    logo: <CoronavirusSVG />,
-    title: "Coronavirus",
-    subtitle: "Real-time Tracker",
-    version: "Versão 1.0 • 05 de Março de 2020",
-    technology: "Desenvolvido em Flutter",
-    linkApple: "",
-    linkGoogle: "",
-    data: DiseaseTracker
+    logo: <CoffingSVG />,
+    title: "Coffing",
+    version: "Versão 1.0 • 01 de Junho de 2020",
+    technology: "Desenvolvido em React",
+    linkWeb: "https://coffing.ifdouglas.com",
+    data: Coffing
   }
 ];
