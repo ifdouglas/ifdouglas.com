@@ -1,7 +1,7 @@
 {
   "name": "ifdouglas",
-  "author": "Douglas Fernandes <contato@douglasfernandes.com.br>",
-  "version": "0.1.0",
+  "author": "Douglas Fernandes <ifdouglas@icloud.com>",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "lab": "npm run start",
