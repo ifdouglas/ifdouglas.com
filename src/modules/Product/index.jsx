@@ -8,7 +8,7 @@ import ButtonGoogle from "core/components/Button/Google";
 import ButtonWeb from "core/components/Button/Web";
 import Slider from "core/components/Slider";
 import SliderItem from "core/components/Slider/Item";
-import { ReactComponent as MeSVG } from 'core/assets/imgs/me2.svg'
+import MePNG from 'core/assets/imgs/me.png'
 import products from "./data";
 import Styled from "./styled";
 
@@ -50,7 +50,7 @@ const Product = () => {
   return (
     <Styled.Wrapper>
       <Styled.SideAnimation>
-        <MeSVG />
+        <img src={MePNG} alt="@ifdouglas" />
       </Styled.SideAnimation>
       {products.map(product => renderCard(product))}
       {/* <Styled.Me>

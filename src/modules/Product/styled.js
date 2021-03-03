@@ -22,9 +22,9 @@ const Wrapper = styled.article`
 `;
 
 const run = keyframes`
-  0% { left: -300px;}
-  50% { left: -100px;}
-  100%{ left: -74px;}
+  0% { left: -100px;}
+  50% { left: -20px;}
+  100%{ left: -4px;}
 `;
 
 const SideAnimation = styled.section`
@@ -33,11 +33,11 @@ const SideAnimation = styled.section`
   animation-name: ${run};
   animation-duration: 5s;
   animation-delay: 3s;
-  left: -300px;
+  left: -100px;
   z-index: 1;
 
   svg {
-    height: 700px;
+    height: 500px;
   }
 `;
 
