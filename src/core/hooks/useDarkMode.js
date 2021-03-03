@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
+const TUNTZ_THEME_KEY = 'theme'
+
 export const useDarkMode = () => {
   const [theme, setTheme] = useState("dark");
   const [componentMounted, setComponentMounted] = useState(false);
   const setMode = mode => {
-    window.localStorage.setItem("theme", mode);
+    window.localStorage.setItem(TUNTZ_THEME_KEY, mode);
     setTheme(mode);
   };
 
@@ -17,7 +19,7 @@ export const useDarkMode = () => {
   };
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme");
+    const localTheme = window.localStorage.getItem(TUNTZ_THEME_KEY);
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches &&
     !localTheme
