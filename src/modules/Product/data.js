@@ -18,9 +18,9 @@ export default [
   {
     logo: <CoffingSVG />,
     title: "Coffing",
-    version: "Versão 1.0 • 01 de Junho de 2020",
+    version: "Versão 1.1 • 09 de Fevereiro de 2021",
     technology: "Desenvolvido em React",
-    linkWeb: "https://coffing.ifdouglas.com",
+    linkWeb: "https://coffing.tuntz.app",
     data: Coffing
   }
 ];
