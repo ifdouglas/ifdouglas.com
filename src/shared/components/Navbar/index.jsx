@@ -6,9 +6,9 @@ import { ReactComponent as LinkedInSVG } from "shared/assets/imgs/linkedin.svg";
 import { ReactComponent as TwitterSVG } from "shared/assets/imgs/twitter.svg";
 import { ReactComponent as MediumSVG } from "shared/assets/imgs/medium.svg";
 import { ReactComponent as LogoSVG } from "shared/assets/imgs/logo.svg";
-import Link from "shared/components/Link";
+// import Link from "shared/components/Link";
 import Text from "shared/components/Text";
-import routes from "shared/constants/paths";
+// import routes from "shared/constants/paths";
 import Styled from "./styled";
 
 const Navbar = () => {
