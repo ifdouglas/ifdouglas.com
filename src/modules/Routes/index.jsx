@@ -1,14 +1,17 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import Content from "core/modules/Content";
-import Product from "core/modules/Product";
-import { PATH_CONTENT, PATH_PRODUCTS } from "core/constants/paths";
+import React, { lazy, Suspense } from "react";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+import routes from "shared/constants/paths";
+
+const Main = lazy(() => import('modules/Main'));
 
 const Routes = () => (
-  <Switch>
-    <Route exact path={PATH_CONTENT} component={Content} />
-    <Route exact path={PATH_PRODUCTS} componen={Product} />
-  </Switch>
+  <BrowserRouter>
+    <Suspense fallback="">
+      <Switch>
+        <Route path={routes.main} component={Main} />
+      </Switch>
+    </Suspense>
+  </BrowserRouter>
 );
 
 export default Routes;
